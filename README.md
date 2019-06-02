@@ -7,7 +7,7 @@ https://getbootstrap.com/docs/4.0/components/carousel/
 2.透過bootstrap navs中的tab讓使用者在頁面中切換選擇要產品查詢或新增產品功能
 https://getbootstrap.com/docs/4.0/components/navs/
 
-3.搶低價功能- 透過parseInt抓取頁面上價錢低於500元的商品低價並
+3.搶低價功能- 透過parseInt抓取商品展示頁面上價錢低於500元的商品，並將價錢文字加上新的class,將font-weight變大並用紅色突顯，讓使用者可以快速發現便宜的產品。
  var priceNum = parseInt(itemPrice[i].textContent.replace(/[^\d]/g, ''));
         if (priceNum <= 500) {
             itemPrice[i].classList.toggle('cheap');
